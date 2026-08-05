@@ -1,0 +1,19 @@
+collectra_pipeline_metadata:
+  name: SandglassPipeline
+  version: 0.1.0
+  ext: sandglass
+  description: FIll in later
+  logo: Sandglass.png
+  theme: Sandglass.css
+
+
+sandglass_detector:
+  type: collectra.ObjectDetectionYOLO
+  model: yolo11n.pt
+  input: image
+  output: sandglass
+  params:
+    epochs: 200
+    imgsz: 1280
+
+  
