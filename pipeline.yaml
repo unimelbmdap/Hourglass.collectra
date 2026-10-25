@@ -1,19 +1,25 @@
 collectra_pipeline_metadata:
-  name: SandglassPipeline
+  name: Hourglass
   version: 0.1.0
-  ext: sandglass
-  description: FIll in later
-  logo: Sandglass.png
-  theme: Sandglass.css
+  ext: hourglass
+  description: Pipeline to detect hourglass in historical artwork.
+  logo: Die_Gartenlaube_(1887)_b_888-crop.png
+  theme: Hourglass.css
 
 
-sandglass_detector:
+hourglass_detector_yolo:
   type: collectra.ObjectDetectionYOLO
   model: yolo11n.pt
   input: image
-  output: sandglass
+  output: hourglass
   params:
     epochs: 200
     imgsz: 1280
+
+
+hourglass_detector_rfdetr:
+  type: collectra.ObjectDetectionRFDETR
+  input: image
+  output: hourglass
 
   
