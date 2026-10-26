@@ -3,7 +3,7 @@ collectra_pipeline_metadata:
   version: 0.1.0
   ext: hourglass
   description: Pipeline to detect hourglass in historical artwork.
-  logo: Die_Gartenlaube_(1887)_b_888-crop.png
+  logo: HourglassLogo.png
   theme: Hourglass.css
 
 
