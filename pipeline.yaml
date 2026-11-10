@@ -1,10 +1,13 @@
-collectra_pipeline_metadata:
+Hourglass:
+  type: collectra.Pipeline
   name: Hourglass
   version: 0.1.0
   ext: hourglass
   description: Pipeline to detect hourglass in historical artwork.
   logo: HourglassLogo.png
   theme: Hourglass.css
+  layouts:
+  - layouts/HourglassDefault.yaml
 
 
 hourglass_detector_yolo:

@@ -1,0 +1,22 @@
+version: 1
+focused: top
+panels:
+  top:
+    active: 0
+    tabs:
+    - kind: node
+      group: image
+  panel2:
+    active: 0
+    tabs:
+    - kind: node
+      group: hourglass
+collapsed: []
+layout:
+- op: remove
+  key: bottom
+- op: split
+  from: top
+  direction: right
+  key: panel2
+sizes: {}
